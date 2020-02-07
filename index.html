@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TRIVIA</title>
+    <style>
+      body {background-color: yellowgreen;}
+      h1 {
+      color: blue;
+      font-family: verdana;
+      font-size: 290%;
+      }
+      p {
+      color: red;
+      font-family: courier;
+      font-size: 160%;
+      border: 1px solid blue;
+      padding: 30px;
+      margin: 50px;
+      }
+      div {
+      color: blue;
+      font-family: courier;
+      font-size: 200%;
+      }
+      button {
+      color: red;
+      font-family: courier;
+      font-size: 100%;
+      }
+    </style>
+</head>
+
+<body align='center' >
+   <div id="startScreen" >
+    <h1>Bienvenida a la Trivia</h1>
+    <p>¡Juega y diviértete!</p>
+    <div id="cont1"><strong></strong></div>
+    <br>
+    <button id="buttonCine"><strong>CINE</strong></button>
+    <button id="buttonMusic"><strong>MUSICA</strong></button>
+   </div>
+
+    <!--preguntas de cine1-->
+ 
+  <div id="cine1" style="display:none">
+    <h2>¿Cuánto sabes de cine?</h2>
+    <p>1.-¿Quién es el director de la película "Avatar"?</p>
+    <input type="radio" name="questionCine1" value="1" id="respuestaValidaCine1"><strong>James Cameron</strong>
+    <br>
+    <input type="radio" name="questionCine1" value="0"> <strong>Steven Spielberg</strong>
+    <br><br>
+    <button id="next1"><strong>SIGUIENTE</strong></button>
+  </div>
+
+   <!--preguntas de cine2-->
+  <div id="cine2" style="display:none">
+   <h2>¿Cuánto sabes de cine?</h2>
+   <p>2.-¿Cómo se llama el actor que interpreta a Neo en la pelicula "Matrix"?</p>
+   <input type="radio" name="questionCine2" value="0"><strong>Hugo Weaving</strong>
+   <br>
+   <input type="radio" name="questionCine2" value="1" id="respuestaValidaCine2"><strong>Keanu Reeves</strong>
+   <br><br>
+   <button id="next2"><strong>SIGUIENTE</strong></button>
+  </div>
+
+   <!--preguntas de cine3-->
+  <div id="cine3" style="display:none">
+    <h2>¿Cuánto sabes de cine?</h2>
+    <p>3.-¿Quién gano el Globo de Oro de Mejor Actor Dramatico en el 2020?</p>
+    <input type="radio" name="questionCine3" value="0"><strong>Adam Driver</strong>
+    <br>
+    <input type="radio" name="questionCine3" value="1" id="respuestaValidaCine3" id=><strong>Joaquin Phoenix</strong>
+    <br><br>
+    <button id="next3" name="resultado" ><strong>SIGUIENTE</strong></button>
+  </div>
+
+  <!--preguntas de musica1-->
+  <div id="music1" style="display:none">
+    <h2>¿Qué tanto sabes de musica?</h2>
+    <p>1-¿Quién compuso la flor de la canela?</p>
+    <input type="radio" name="questionMusic1" value="1" id="respuestaValidaMusic1"><strong>Chabuca Granda</strong>
+    <br>
+    <input type="radio" name="questionMusic1" value="0"><strong>Eva Ayllon</strong>
+    <br><br>
+    <button id="next4"><strong>SIGUIENTE</strong></button>
+  </div>
+
+<!--preguntas de musica2-->
+  <div id="music2" style="display:none">
+    <h2>¿Qué tanto sabes de musica?</h2>
+    <p>2-¿Cuál es el video musical de youtube que mas reproducciones tiene?</p>
+    <input type="radio" name="questionMusic2" value="1" id="respuestaValidaMusic2"><strong>Despacito</strong>
+    <br>
+    <input type="radio" name="questionMusic2" value="0"><strong>Shape of you</strong>
+    <br><br>
+    <button id="next5"><strong>SIGUIENTE</strong></button>
+  </div>
+
+  <!--preguntas de musica3-->
+  <div id="music3" style="display:none">
+    <h2>¿Qué tanto sabes de musica?</h2>
+    <p>3-¿Quién compuso la musica del Himno Nacional del Peru?</p>
+    <input type="radio" name="questionMusic3" value="0"><strong>Jose de la Torre Ugarte</strong>
+    <br>
+    <input type="radio" name="questionMusic3" value="1" id="respuestaValidaMusic3"><strong>Jose Bernando Alcedo</strong>
+    <br><br>
+    <button id="next6"><strong>SIGUIENTE</strong></button>
+  </div>
+
+  <script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
